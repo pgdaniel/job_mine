@@ -1,0 +1,9 @@
+= simple_form_for @job do |f|
+  = f.input :name
+  %h3 terms
+  #terms
+    = f.simple_fields_for :search_terms do |search_term|
+      = render 'search_term_fields', :f => search_term
+    .links
+      = link_to_add_association 'add task', f, :search_terms
+  = f.submit

@@ -1,0 +1,13 @@
+%table
+  %tr
+    %th
+      word
+    %th
+      count
+    - @word_frequencies.each do |w, c|
+      %tr
+        %td
+          = w
+        %td
+          = c
+

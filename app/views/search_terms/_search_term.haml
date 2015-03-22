@@ -1,2 +1,2 @@
 .search_term
-  = search_term.value
+  = link_to search_term.value, job_search_term_path(search_term.job, search_term)

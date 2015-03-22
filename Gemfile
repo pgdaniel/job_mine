@@ -25,6 +25,11 @@ gem "uglifier"
 gem "unicorn"
 gem "cocoon"
 gem "haml"
+gem "httparty"
+gem 'table_cloth'
+gem "sidekiq"
+gem "words_counted"
+gem "sentimentalizer"
 
 group :development do
   gem "spring"

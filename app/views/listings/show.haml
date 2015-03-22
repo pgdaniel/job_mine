@@ -1,0 +1,8 @@
+%h3
+  = @listing.title
+%h4
+  = @listing.company
+
+- @listing.sorted_words.each do |word, word_occurance|
+  %p
+    = "#{word} : #{word_occurance}"

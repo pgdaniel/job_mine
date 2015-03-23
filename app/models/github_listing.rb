@@ -1,0 +1,2 @@
+class GithubListing < Listing
+end

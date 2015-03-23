@@ -2,6 +2,8 @@
   = @listing.title
 %h4
   = @listing.company
+%p
+  = @listing.sentiment_score
 
 - @listing.sorted_words.each do |word, word_occurance|
   %p

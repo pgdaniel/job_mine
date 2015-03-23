@@ -1,0 +1,2 @@
+class IndeedListing < Listing
+end

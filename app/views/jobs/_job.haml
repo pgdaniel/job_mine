@@ -1,2 +1,4 @@
 .job
-=link_to job.name, job_path(job)
+  %span
+    =link_to job.name, job_path(job)
+    = 'finished' if job.complete

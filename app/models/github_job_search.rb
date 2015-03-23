@@ -15,11 +15,11 @@ class GithubJobSearch
 
   def create_listings
     @listings.each do |listing|
-      @term.listings.create(listing.select {|k,v| allowed_keys.include?(k) })
+      @term.github_listings.create(listing.select {|k,v| allowed_keys.include?(k) })
     end
   end
 
   def allowed_keys
-    Listing.column_names - %w[id created_at updated_at]
+    Listing.column_names - %w[id created_at updated_at type]
   end
 end

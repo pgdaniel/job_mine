@@ -1,7 +1,14 @@
+= link_to 'link', @listing.url
+
 %h3
   = @listing.title
+
+%h3
+  = @listing.search_term.value
+
 %h4
   = @listing.company
+
 %p
   = @listing.sentiment_score
 

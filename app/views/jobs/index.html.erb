@@ -1,4 +1,5 @@
 <section class="jobs">
-  <%= link_to 'New', new_job_path %>
+<li><%= link_to 'overall word frequencies', word_frequencies_path %></li>
+<li><%= link_to 'New', new_job_path %></li>
   <%= simple_table_for @jobs, with: 'JobTable' %>
 </section>
